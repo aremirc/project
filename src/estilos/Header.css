@@ -1,0 +1,78 @@
+/* Estilos para el header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.header__principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para el título */
+.header__titulo {
+  margin: 0;
+}
+
+/* Estilos para la navegación */
+.header__nav {
+  margin-top: 10px;
+}
+
+.header__ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header__li {
+  margin: 0 10px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__link:hover {
+  color: #ffcc00;
+}
+
+/* Estilos para el logo */
+.header__logo {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Estilos para el formulario de búsqueda */
+.header__form {
+  padding: 5px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__entrada {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.header__boton {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+.header__boton:hover {
+  background-color: rgb(255, 70, 24);
+  color: #fff;
+}

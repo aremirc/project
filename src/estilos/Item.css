@@ -1,0 +1,39 @@
+.item {
+  padding: 15px;
+}
+
+/* Estilos para las secciones dentro de main */
+.item__section {
+  max-width: 320px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los títulos de sección */
+.item__titulo {
+  color: #333;
+}
+
+/* Estilos para los párrafos de sección */
+.item__parrafo {
+  color: #666;
+  text-overflow: ellipsis;
+}
+
+/* Estilos para la figura */
+.item__figure {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Estilos para la imagen dentro de la figura */
+.item__figureImg {
+  max-width: 100%;
+  height: auto;
+  color: #0078CF;
+}
+
+/* Estilos para la descripción de la imagen */
+.item__figcaption {
+  color: #999;
+  font-style: italic;
+}
