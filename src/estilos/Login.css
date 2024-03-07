@@ -1,64 +1,6 @@
 .login {
-  flex: 1;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background-image:
-    radial-gradient(circle at top right, #4bc54f, #2196F3),
-    linear-gradient(to right, #ff8a00, #da1b60);
-}
-
-.login__principal {
-  border-radius: 10px;
-  background-color: transparent;
-  backdrop-filter: brightness(.8);
-  overflow: hidden;
-}
-
-/* Estilos para el formulario de inicio de sesión */
-.login__form {
-  max-width: 320px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  /* background-color: #f9f9f9; */
-}
-
-.login__label {
-  color: #fff;
-}
-
-/* Estilos para los campos de entrada */
-.login__entrada {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-/* Estilos para el botón de inicio de sesión */
-.login__boton {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0 5px;
-  border: none;
-  border-radius: 3px;
-  background-color: #4CAF50;
-  color: white;
-  cursor: pointer;
-}
-
-/* Estilos para el enlace de recuperar contraseña */
-.login__link {
-  text-decoration: none;
-  color: #f9f9f9;
-  display: block;
-  margin-top: 10px;
-}
-
-.login__link:hover {
-  color: #ff8a00;
 }

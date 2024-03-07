@@ -1,9 +1,10 @@
 import '../estilos/Home.css';
+import PlantillaHome from '../templates/PlantillaHome';
 
 function Home() {
-    return(
+    return (
         <div className='home'>
-            BIENVENIDO
+            <PlantillaHome />
         </div>
     )
 }

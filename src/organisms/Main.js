@@ -1,5 +1,5 @@
 import '../estilos/Main.css';
-import Item from './Item';
+import Item from '../molecules/Item';
 
 function Main() {
   return (

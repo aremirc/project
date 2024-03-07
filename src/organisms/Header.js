@@ -1,6 +1,15 @@
 import '../estilos/Header.css';
+import { Link } from 'react-router-dom';
 
 function Header(props) {
+
+  const logOut = () => {
+    sessionStorage.setItem("myKey", false);
+    sessionStorage.removeItem("myKey");
+  }
+
+  const valor = sessionStorage.getItem("myKey");
+
   return (
     <header className="header">
       <div className="header__principal">
@@ -19,11 +28,11 @@ function Header(props) {
         </form> */}
         <div>
           {
-            props.isLoggedIn ? (
-              <button className='header__boton' onClick={props.logOut}>Cerrar sesión</button>
+            valor ? (
+              <button className='header__boton' onClick={logOut}>Cerrar sesión</button>
             ) : (
               <>
-                <button className='header__boton' onClick={props.logIn}>Iniciar sesión</button>
+                <Link className='header__boton' onClick={props.logIn} to="/login">Iniciar sesión</Link>
                 <button className='header__boton'>Crear cuenta</button>
               </>
             )

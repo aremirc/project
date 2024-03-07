@@ -1,9 +1,10 @@
 .footer {
   transition: background-color 0.3s ease;
+  background: linear-gradient(to right, #70caee, #f7d232);
 }
 
 .footer:hover {
-  background-color: #ffcc00;
+  background: #ffcc00;
 }
 
 /* Contenido Relevante */
