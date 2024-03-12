@@ -7,10 +7,8 @@ function PlantillaCentral() {
     return (
         <div className='plantillaCentral'>
             <Header />
-            {/* <Header logIn={logIn} isLoggedIn={isLoggedIn} logOut={logOut} /> */}
             <main className='plantillaCentral__main'>
                 <Main />
-                {/* {showLogIn ? (isLoggedIn ? (<Main />) : (<Login verify={verify} hideLogIn={hideLogIn} />)) : (<Home />)} */}
             </main>
             <Footer />
         </div>

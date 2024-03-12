@@ -1,14 +1,12 @@
 import '../estilos/Header.css';
 import { Link } from 'react-router-dom';
 
-function Header(props) {
-
+function Header() {
+  
   const logOut = () => {
-    sessionStorage.setItem("myKey", false);
     sessionStorage.removeItem("myKey");
   }
-
-  const valor = sessionStorage.getItem("myKey");
+  
 
   return (
     <header className="header">
@@ -28,11 +26,12 @@ function Header(props) {
         </form> */}
         <div>
           {
-            valor ? (
-              <button className='header__boton' onClick={logOut}>Cerrar sesión</button>
+            sessionStorage.getItem("myKey") ? (
+              // <button className='header__boton' onClick={logOut}>Cerrar sesión</button>
+              <Link className='header__boton' onClick={logOut} to="/login">Cerrar sesión</Link>
             ) : (
               <>
-                <Link className='header__boton' onClick={props.logIn} to="/login">Iniciar sesión</Link>
+                <Link className='header__boton' to="/login">Iniciar sesión</Link>
                 <button className='header__boton'>Crear cuenta</button>
               </>
             )

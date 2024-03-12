@@ -1,10 +1,18 @@
 import '../estilos/Login.css';
 import PlantillaLogin from '../templates/PlantillaLogin';
+import { Navigate } from 'react-router-dom';
 
-function Login() {  
+function Login() {
+
   return (
     <div className='login'>
-      < PlantillaLogin />
+      {
+        sessionStorage.getItem("myKey") ? (
+          <Navigate to="/central" />
+        ) : (
+          < PlantillaLogin />
+        )
+      }
     </div>
   )
 }
