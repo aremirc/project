@@ -6,7 +6,8 @@
 
 .plantillaHome__main {
     flex: 1;
-    background-image: url('https://i0.wp.com/picjumbo.com/wp-content/themes/picjumbofree/data-premium/bg_head.jpg');
+    background-image: url('https://img3.wallspic.com/crops/9/8/3/0/30389/30389-centro_de_datos-computacin-3840x2160.jpg');
+    background-size: cover;
     color: white;
     display: flex;
     align-items: center;

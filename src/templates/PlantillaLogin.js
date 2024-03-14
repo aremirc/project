@@ -11,7 +11,7 @@ function PlantillaLogin() {
 
   return (
     <div className='plantillaLogin'>
-      <Header />
+      <Header hide={true} />
       <div className='plantillaLogin__principal'>
         <div className='login__principal'>
           <form className='login__form'>

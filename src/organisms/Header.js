@@ -1,12 +1,11 @@
 import '../estilos/Header.css';
 import { Link } from 'react-router-dom';
 
-function Header() {
-  
+function Header({ hide }) {
+
   const logOut = () => {
     sessionStorage.removeItem("myKey");
   }
-  
 
   return (
     <header className="header">
@@ -14,9 +13,9 @@ function Header() {
         <h1 className='header__titulo'>Mi sitio web</h1>
         <nav className='header__nav'>
           <ul className='header__ul'>
-            <li className='header__li'><a className='header__link' href=".">Inicio</a></li>
-            <li className='header__li'><a className='header__link' href=".">Acerca de</a></li>
-            <li className='header__li'><a className='header__link' href=".">Contacto</a></li>
+            <li className='header__li'><Link className='header__link' to="/project">Inicio</Link></li>
+            <li className='header__li'><Link className='header__link' to="/central">Servicios</Link></li>
+            <li className='header__li'><Link className='header__link' to="/contact">Contacto</Link></li>
           </ul>
         </nav>
         <img className='header__logo' src="logo.png" alt="Logo de mi sitio web" />
@@ -27,13 +26,16 @@ function Header() {
         <div>
           {
             sessionStorage.getItem("myKey") ? (
-              // <button className='header__boton' onClick={logOut}>Cerrar sesión</button>
               <Link className='header__boton' onClick={logOut} to="/login">Cerrar sesión</Link>
             ) : (
-              <>
-                <Link className='header__boton' to="/login">Iniciar sesión</Link>
-                <button className='header__boton'>Crear cuenta</button>
-              </>
+              hide ? (
+                <Link className='header__boton' to="/register">Crear cuenta</Link>
+              ) : (
+                <>
+                  <Link className='header__boton' to="/login">Iniciar sesión</Link>
+                  <Link className='header__boton' to="/register">Crear cuenta</Link>
+                </>
+              )
             )
           }
         </div>
