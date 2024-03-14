@@ -13,25 +13,23 @@ function PlantillaLogin() {
     <div className='plantillaLogin'>
       <Header hide={true} />
       <div className='plantillaLogin__principal'>
-        <div className='login__principal'>
-          <form className='login__form'>
-            <div>
-              <label className='login__label' htmlFor="username">Usuario:</label>
-              <input className='login__entrada' type="text" id="username" name="username" required />
-            </div>
-            <div>
-              <label className='login__label' htmlFor="password">Contraseña:</label>
-              <input className='login__entrada' type="password" id="password" name="password" required />
-            </div>
-            <div>
-              {/* <input className='login__boton' type="submit" value="Iniciar sesión" /> */}
-              <Link className='login__boton' onClick={verify} to="/central">Iniciar sesión</Link>
-            </div>
-            <div>
-              <a className='login__link' href="recuperar_contrasena.html">¿Olvidaste tu contraseña?</a>
-            </div>
-          </form>
-        </div>
+        <form className='plantillaLogin__form'>
+          <div>
+            <label className='plantillaLogin__label' htmlFor="username">Usuario:</label>
+            <input className='plantillaLogin__entrada' type="text" id="username" name="username" required />
+          </div>
+          <div>
+            <label className='plantillaLogin__label' htmlFor="password">Contraseña:</label>
+            <input className='plantillaLogin__entrada' type="password" id="password" name="password" required />
+          </div>
+          <div>
+            {/* <input className='plantillaLogin__boton' type="submit" value="Iniciar sesión" /> */}
+            <Link className='plantillaLogin__boton' onClick={verify} to="/central">Iniciar sesión</Link>
+          </div>
+          <div>
+            <a className='plantillaLogin__link' href="recuperar_contrasena.html">¿Olvidaste tu contraseña?</a>
+          </div>
+        </form>
       </div>
       <Footer />
     </div>

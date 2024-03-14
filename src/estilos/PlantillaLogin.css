@@ -9,34 +9,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    background-image:
-      radial-gradient(circle at top right, #70caee, #f7d232);
-    }
-  
-  .login__principal {
     border-radius: 10px;
     background-color: transparent;
-    backdrop-filter: brightness(.8);
+    backdrop-filter: brightness(.8) blur(4px);
+    background-image: url('https://getwallpapers.com/wallpaper/full/9/2/a/537812.jpg');
+    background-size: cover;
     overflow: hidden;
-  }
+    opacity: .9;
+    }
   
   /* Estilos para el formulario de inicio de sesión */
-  .login__form {
+  .plantillaLogin__form {
     max-width: 320px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    /* background-color: #f9f9f9; */
+    background-color: #f9f9f9;
   }
   
-  .login__label {
-    color: #fff;
+  .plantillaLogin__label {
+    color: #000000;
   }
   
   /* Estilos para los campos de entrada */
-  .login__entrada {
+  .plantillaLogin__entrada {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -45,7 +42,7 @@
   }
   
   /* Estilos para el botón de inicio de sesión */
-  .login__boton {
+  .plantillaLogin__boton {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -54,19 +51,19 @@
     margin: 10px 0 5px;
     border: none;
     border-radius: 3px;
-    background-color: lightseagreen;
+    background-color: lightcoral;
     color: white;
     cursor: pointer;
   }
   
   /* Estilos para el enlace de recuperar contraseña */
-  .login__link {
+  .plantillaLogin__link {
     text-decoration: none;
-    color: #f9f9f9;
+    color: #000000;
     display: block;
     margin-top: 10px;
   }
   
-  .login__link:hover {
+  .plantillaLogin__link:hover {
     color: #ff8a00;
   }

@@ -1,9 +1,9 @@
 .item {
   width: 320px;
   /* height: 500px; */
-  margin: 7px 10px;
-  background: rgba(189, 179, 179, 0.15);
+  margin: 10px 12px;
   border-radius: .8rem;
+  box-shadow: 1px 3px 10px -5px black;
   overflow: hidden;
 }
 
@@ -41,9 +41,10 @@
 
 /* Estilos para los títulos */
 .item__titulo {
-  color: #333;
+  color: rgb(255, 72, 0);
   margin: 15px 0;
   font-size: 1.75rem;
+  text-shadow: 1px 1px 2px #333;
 }
 
 /* Estilos para los párrafos */
