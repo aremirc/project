@@ -1,31 +1,17 @@
-import Login from './pages/Login';
-import { useState } from 'react';
+import Login from '../pages/Login';
+// import { useState } from 'react';
 
 function Session() {
     
-    const [showLogIn, setShowLogIn] = useState(false)
+    // const [showLogIn, setShowLogIn] = useState(false)
 
-    const logIn = () => {
-        setShowLogIn(true);
-    }
-
-    const hideLogIn = () => {
-        setShowLogIn(false);
-    }
-
-    // const [isLoggedIn, setIsLoggedIn] = useState(false)
-
-    // const verify = () => {
-    //     setIsLoggedIn(true);
+    // const logIn = () => {
+    //     setShowLogIn(true);
     // }
 
-    // const logOut = () => {
-    //     setIsLoggedIn(false);
+    // const hideLogIn = () => {
+    //     setShowLogIn(false);
     // }
-    
-    sessionStorage.setItem("myKey", false);
-    
-    // localStorage.clear();
 
     return (
         <div className='session'>

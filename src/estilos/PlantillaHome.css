@@ -28,6 +28,7 @@
   background-image: url(https://img3.wallspic.com/crops/9/8/3/0/30389/30389-centro_de_datos-computacin-3840x2160.jpg);
   background-position: center;
   background-size: cover;
+  transition: all 1s;
 }
 
 .plantillaHome__boton {
@@ -39,6 +40,10 @@
   background: transparent;
   position: absolute;
   cursor: pointer;
+}
+
+.plantillaHome__boton:hover {
+  transform: scale(1.2);
 }
 
 .plantillaHome__boton--ade {

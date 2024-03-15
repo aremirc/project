@@ -10,11 +10,7 @@ function PlantillaHome() {
     '<style>.plantillaHome__cambio {background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/522.jpg")}</style>',
     '<style>.plantillaHome__cambio {background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/565.jpg")}</style>',
     '<style>.plantillaHome__cambio {background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/1183.jpg")}</style>',
-    '<style>.plantillaHome__cambio {background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/570.jpg")}</style>',
-    '<style>.plantillaHome__cambio {background-image: url("https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022_640.jpg")}</style>',
-    '<style>.plantillaHome__cambio {background-image: url("https://cdn.pixabay.com/photo/2013/08/20/15/47/poppies-174276_640.jpg")}</style>',
-    '<style>.plantillaHome__cambio {background-image: url("https://cdn.pixabay.com/photo/2017/02/13/21/57/lake-2063957_640.jpg")}</style>',
-    '<style>.plantillaHome__cambio {background-image: url("https://cdn.pixabay.com/photo/2017/10/10/07/48/hills-2836301_640.jpg")}</style>']
+    '<style>.plantillaHome__cambio {background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/570.jpg")}</style>']
   function cambiarAde() {
     var d = document.querySelector('.plantillaHome__cambio');
     cont++;
@@ -23,7 +19,7 @@ function PlantillaHome() {
   }
   function cambiarAtr() {
     var d = document.querySelector('.plantillaHome__cambio');
-    cont = (cont === 0 || cont === -1) ? 9 : cont;
+    cont = (cont === 0 || cont === -1) ? array_img.length : cont;
     cont--;
     cont = cont % array_img.length;
     d.innerHTML = array_img[cont];

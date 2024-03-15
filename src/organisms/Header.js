@@ -5,6 +5,7 @@ function Header({ hide }) {
 
   const logOut = () => {
     sessionStorage.removeItem("myKey");
+    // localStorage.clear();
   }
 
   return (
@@ -16,6 +17,7 @@ function Header({ hide }) {
             <li className='header__li'><Link className='header__link' to="/project">Inicio</Link></li>
             <li className='header__li'><Link className='header__link' to="/central">Servicios</Link></li>
             <li className='header__li'><Link className='header__link' to="/allies">Aliados</Link></li>
+            <li className='header__li'><Link className='header__link' to="/clients">Clientes</Link></li>
             <li className='header__li'><Link className='header__link' to="/contact">Contacto</Link></li>
           </ul>
         </nav>
