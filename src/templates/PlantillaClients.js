@@ -6,7 +6,7 @@ function PlantillaClients() {
   return (
     <div className='plantillaClients'>
       <Header />
-
+      <main className='plantillaClients__main'></main>
       <Footer />
     </div>
   )

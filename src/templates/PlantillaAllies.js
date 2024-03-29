@@ -6,7 +6,7 @@ function PlantillaAllies() {
   return (
     <div className='plantillaAllies'>
       <Header />
-
+      <main className='plantillaAllies__main'></main>
       <Footer />
     </div>
   )

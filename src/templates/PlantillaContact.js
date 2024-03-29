@@ -6,7 +6,7 @@ function PlantillaContact() {
   return (
     <div className='plantillaContact'>
       <Header />
-
+      <main className='plantillaContact__main'></main>
       <Footer />
     </div>
   )

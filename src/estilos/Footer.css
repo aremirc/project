@@ -1,9 +1,5 @@
 .footer {
-  background: linear-gradient(to right, #70caee, #c3f732);
-}
-
-.footer:hover {
-  background: linear-gradient(to right, #c3f732, #70caee);
+  backdrop-filter: brightness(1.5);
 }
 
 /* Contenido Relevante */
@@ -13,8 +9,12 @@
   align-items: center;
 }
 
-.footer__texto {
-  margin-left: 20px;
+.footer__texto,
+.footer__li {
+  color: #aaa;
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin: 16px 20px;
 }
 
 .footer__ul {
@@ -23,15 +23,11 @@
   display: flex;
 }
 
-.footer__li {
-  margin-right: 20px;
-}
-
 .footer__link {
   text-decoration: none;
-  color: #333;
+  color: #aaa;
 }
 
 .footer__link:hover {
-  color: red;
+  color: rgb(255, 123, 0);
 }

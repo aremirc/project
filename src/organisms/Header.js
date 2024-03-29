@@ -1,7 +1,19 @@
 import '../estilos/Header.css';
 import { Link } from 'react-router-dom';
+import React, { useEffect, useRef } from 'react';
+// import { useState } from 'react';
 
 function Header({ hide }) {
+
+  // const [lastItem, setLastItem] = useState(false)
+
+  // const itemClicked = () => {
+  //   setLastItem(true);
+  // }
+
+  const itemLiRef = useRef(null);
+
+  useEffect(() => { }, []);
 
   const logOut = () => {
     sessionStorage.removeItem("myKey");
@@ -11,9 +23,12 @@ function Header({ hide }) {
   return (
     <header className="header">
       <div className="header__principal">
-        <h1 className='header__titulo'>Mi sitio web</h1>
+        <Link className='header__marca' to="/project">
+          <img className='header__logo' src="logo.png" alt="Logo de TECNIPAC" />
+          <h1 className='header__titulo'>TECNIPAC</h1>
+        </Link>
         <nav className='header__nav'>
-          <ul className='header__ul'>
+          <ul className='header__ul' ref={itemLiRef}>
             <li className='header__li'><Link className='header__link' to="/project">Inicio</Link></li>
             <li className='header__li'><Link className='header__link' to="/central">Servicios</Link></li>
             <li className='header__li'><Link className='header__link' to="/allies">Aliados</Link></li>
@@ -21,12 +36,11 @@ function Header({ hide }) {
             <li className='header__li'><Link className='header__link' to="/contact">Contacto</Link></li>
           </ul>
         </nav>
-        <img className='header__logo' src="logo.png" alt="Logo de mi sitio web" />
         {/* <form className='header__form'>
-          <input className='header__entrada' type="search" placeholder="Buscar en mi sitio web" />
+          <input className='header__entrada' type="search" placeholder="Buscar en TECNIPAC" />
           <button className='header__boton' type="submit">Buscar</button>
         </form> */}
-        <div>
+        <div className='header__sesion'>
           {
             sessionStorage.getItem("myKey") ? (
               <Link className='header__boton' onClick={logOut} to="/login">Cerrar sesión</Link>

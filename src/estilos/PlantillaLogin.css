@@ -9,10 +9,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
     background-color: transparent;
     backdrop-filter: brightness(.8) blur(4px);
-    background-image: url('https://getwallpapers.com/wallpaper/full/9/2/a/537812.jpg');
     background-size: cover;
     overflow: hidden;
     opacity: .9;
@@ -25,11 +23,13 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: rgba(249, 249, 249, .85);
   }
   
   .plantillaLogin__label {
-    color: #000000;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #240101;
   }
   
   /* Estilos para los campos de entrada */
@@ -51,15 +51,25 @@
     margin: 10px 0 5px;
     border: none;
     border-radius: 3px;
-    background-color: lightcoral;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #c02416;
     color: white;
     cursor: pointer;
+  }
+
+  .plantillaLogin__boton:hover {
+    transform: scale(1.01);
+    background-color: rgb(255, 123, 0);
   }
   
   /* Estilos para el enlace de recuperar contraseña */
   .plantillaLogin__link {
     text-decoration: none;
-    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: rgb(105, 13, 13);
     display: block;
     margin-top: 10px;
   }

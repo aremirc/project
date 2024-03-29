@@ -4,16 +4,37 @@
   margin: 10px 12px;
   border-radius: .8rem;
   box-shadow: 1px 3px 10px -5px black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   overflow: hidden;
+}
+
+.item:hover .item__figure {
+  width: 100%;
+  transform: translateY(0);
+}
+
+.item:hover .item__texto {
+  transform: translateY(0);
+}
+
+.item:hover .item__parrafo {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: .5s;
 }
 
 /* Estilos para la figura */
 .item__figure {
-  width: 100%;
+  width: 80%;
   height: 250px;
   margin: 0;
   text-align: center;
   position: relative;
+  transform: translateY(100px);
+  transition: .75s;
 }
 
 /* Estilos para la imagen dentro de la figura */
@@ -37,22 +58,31 @@
 .item__texto {
   /* height: 250px; */
   padding: 20px 15px;
+  transform: translateY(80px);
+  transition: 1s;
 }
 
 /* Estilos para los títulos */
 .item__titulo {
   color: rgb(255, 72, 0);
   margin: 15px 0;
-  font-size: 1.75rem;
+  font-size: 2.8rem;
+  font-weight: 400;
   text-shadow: 1px 1px 2px #333;
 }
 
 /* Estilos para los párrafos */
 .item__parrafo {
-  color: #666;
+  color: #fff;
   padding: 0 15px;
+  font-size: 1.5rem;
+  font-weight: 100;
   letter-spacing: .5px;
   /* white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; */
+  transform: translateY(100px);
+  transition: .75s;
+  visibility: 0;
+  opacity: 0;
 }

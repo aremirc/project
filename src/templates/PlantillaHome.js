@@ -29,7 +29,10 @@ function PlantillaHome() {
     <div className='plantillaHome'>
       <Header />
       <main className='plantillaHome__main'>
-        <h2>BIENVENIDO</h2>
+        <div className='plantillaHome__texto'>
+          <h2 className='plantillaHome__titulo'>CABLEADO<br /><span className='plantillaHome__titulo--span'>ESTRUCTURADO</span></h2>
+          <p></p>
+        </div>
         <div className='plantillaHome__img'>
           <div className='plantillaHome__cambio' backgroundimage={'https://img3.wallspic.com/crops/9/8/3/0/30389/30389-centro_de_datos-computacin-3840x2160.jpg'}></div>
           <button className='plantillaHome__boton plantillaHome__boton--ade' onClick={cambiarAde}>►</button>
