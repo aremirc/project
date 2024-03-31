@@ -1,6 +1,7 @@
 .main {
   flex: 1;
   padding: 20px;
+  backdrop-filter: grayscale(1);
 }
 
 .main__principal {

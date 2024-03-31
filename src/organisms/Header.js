@@ -1,6 +1,5 @@
 import '../estilos/Header.css';
 import { Link } from 'react-router-dom';
-import React, { useEffect, useRef } from 'react';
 // import { useState } from 'react';
 
 function Header({ hide }) {
@@ -10,10 +9,6 @@ function Header({ hide }) {
   // const itemClicked = () => {
   //   setLastItem(true);
   // }
-
-  const itemLiRef = useRef(null);
-
-  useEffect(() => { }, []);
 
   const logOut = () => {
     sessionStorage.removeItem("myKey");
@@ -28,10 +23,10 @@ function Header({ hide }) {
           <h1 className='header__titulo'>TECNIPAC</h1>
         </Link>
         <nav className='header__nav'>
-          <ul className='header__ul' ref={itemLiRef}>
+          <ul className='header__ul'>
             <li className='header__li'><Link className='header__link' to="/project">Inicio</Link></li>
             <li className='header__li'><Link className='header__link' to="/central">Servicios</Link></li>
-            <li className='header__li'><Link className='header__link' to="/allies">Aliados</Link></li>
+            <li className='header__li'><Link className='header__link' to="/allies">Partners</Link></li>
             <li className='header__li'><Link className='header__link' to="/clients">Clientes</Link></li>
             <li className='header__li'><Link className='header__link' to="/contact">Contacto</Link></li>
           </ul>

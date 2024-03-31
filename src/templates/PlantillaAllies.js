@@ -1,12 +1,19 @@
 import '../estilos/PlantillaAllies.css';
-import Footer from '../organisms/Footer';
 import Header from '../organisms/Header';
+import Footer from '../organisms/Footer';
+import Boton from '../atoms/Boton';
 
 function PlantillaAllies() {
   return (
     <div className='plantillaAllies'>
       <Header />
-      <main className='plantillaAllies__main'></main>
+      <main className='plantillaAllies__main'>
+        <Boton text='HIK VISION' />
+        <Boton text='DAHUA' />
+        <Boton text='DIXON' />
+        <Boton text='FORZA' />
+        <Boton text='TENDA' />
+      </main>
       <Footer />
     </div>
   )
