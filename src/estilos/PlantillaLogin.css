@@ -9,8 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
-    backdrop-filter: brightness(.8) blur(4px);
+    background-image: url('https://img3.wallspic.com/crops/9/8/3/0/30389/30389-centro_de_datos-computacin-3840x2160.jpg');
     background-size: cover;
     overflow: hidden;
     opacity: .9;
@@ -20,16 +19,21 @@
   .plantillaLogin__form {
     max-width: 320px;
     margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
+    padding: 25px;
+    border: 1px solid #4400ff;
+    backdrop-filter: brightness(.6) blur(5px);
     border-radius: 10px;
-    background-color: rgba(249, 249, 249, .85);
+  }
+
+  .plantillaLogin__box {
+    margin: 12px 0;
   }
   
   .plantillaLogin__label {
     font-size: 2rem;
     font-weight: 400;
-    color: #240101;
+    letter-spacing: 1px;
+    color: #fff;
   }
   
   /* Estilos para los campos de entrada */
@@ -37,8 +41,14 @@
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #ccc;
+    border: none;
+    border-bottom: 1px solid #4400ff;
     border-radius: 3px;
+    background: rgba(255, 255, 255, .3);
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    outline: none;
   }
   
   /* Estilos para el botón de inicio de sesión */
@@ -54,7 +64,7 @@
     font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background-color: #c02416;
+    background-color: #4400ff;
     color: white;
     cursor: pointer;
   }
@@ -68,12 +78,13 @@
   .plantillaLogin__link {
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: 200;
-    color: rgb(105, 13, 13);
+    font-weight: 400;
+    color: #b397ff;
     display: block;
     margin-top: 10px;
   }
   
   .plantillaLogin__link:hover {
-    color: #ff8a00;
+    color: #e1d6ff;
+    transform: scale(1.1);
   }

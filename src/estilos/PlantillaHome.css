@@ -30,3 +30,40 @@
   font-size: 5.5rem;
   font-weight: 700;
 }
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+  .plantillaHome {
+    width: 100vw;
+  }
+
+  .plantillaHome__main {
+    flex-direction: column;
+  }
+
+  .plantillaHome__texto {
+    max-width: 100%;
+  }
+
+  .plantillaHome__titulo {
+    font-size: 3.5rem;
+  }
+
+  .plantillaHome__titulo--span {
+    font-size: 4rem;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .plantillaHome__main {
+    flex-direction: column;
+  }
+
+  .plantillaHome__texto {
+    max-width: 100%;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1025px) {}

@@ -1,5 +1,5 @@
 .footer {
-  backdrop-filter: brightness(1.5);
+  backdrop-filter: brightness(1);
 }
 
 /* Contenido Relevante */
@@ -11,7 +11,7 @@
 
 .footer__texto,
 .footer__li {
-  color: #aaa;
+  color: #c7281a;
   font-size: 1.3rem;
   font-weight: 100;
   margin: 16px 20px;
@@ -25,15 +25,11 @@
 
 .footer__link {
   display: flex;
+  font-weight: 300;
   text-decoration: none;
-  color: #c4c8ce;
+  color: #c7281a;
   position: relative;
   transition: 1.35s;
-}
-
-.footer__link:hover {
-  color: rgb(255, 123, 0);
-  transition: color .3s;
 }
 
 .footer__link::after {
@@ -43,14 +39,42 @@
   bottom: -6px;
   width: 100%;
   height: 1px;
-  background: rgb(255, 123, 0);
+  background: #c7281a;
   transition: all ease-in-out .45s;
   transform: scaleX(0);
   transform-origin: bottom right;
-  /* transition: transform 0.6s cubic-bezier(.25,.8,.25,1) 0s; */
+  transition: transform 0.6s cubic-bezier(.25,.8,.25,1) 0s;
 }
 
 .footer__link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+  .footer {
+    width: 100vw;
+  }
+
+  .footer__ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__texto, .footer__li {
+    font-size: 1rem;
+  }
+
+  .footer__li {
+    margin: 0 20px;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1025px) {
 }

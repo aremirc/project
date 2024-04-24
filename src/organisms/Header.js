@@ -34,22 +34,26 @@ function Header({ hide }) {
         {/* <form className='header__form'>
           <input className='header__entrada' type="search" placeholder="Buscar en TECNIPAC" />
           <button className='header__boton' type="submit">Buscar</button>
+          <Link className='header__link' to="/search">Search</Link>
         </form> */}
-        <div className='header__sesion'>
-          {
-            sessionStorage.getItem("myKey") ? (
-              <Link className='header__boton' onClick={logOut} to="/login">Cerrar sesión</Link>
-            ) : (
-              hide ? (
-                <Link className='header__boton' to="/register">Crear cuenta</Link>
+        <div className='header__box'>
+          <div className='header__sesion'>
+            {
+              sessionStorage.getItem("myKey") ? (
+                <Link className='header__boton' onClick={logOut} to="/login">Cerrar sesión</Link>
               ) : (
-                <>
-                  <Link className='header__boton' to="/login">Iniciar sesión</Link>
+                hide ? (
                   <Link className='header__boton' to="/register">Crear cuenta</Link>
-                </>
+                ) : (
+                  <>
+                    <Link className='header__boton' to="/login">Iniciar sesión</Link>
+                    <Link className='header__boton' to="/register">Crear cuenta</Link>
+                  </>
+                )
               )
-            )
-          }
+            }
+          </div>
+          <div className='header__toggle'></div>
         </div>
       </div>
     </header>

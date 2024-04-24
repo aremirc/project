@@ -6,6 +6,7 @@ import Principal from './containers/Principal';
 import PlantillaAllies from './templates/PlantillaAllies';
 import PlantillaClients from './templates/PlantillaClients';
 import PlantillaContact from './templates/PlantillaContact';
+import Search from './pages/Search';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/allies" element={< PlantillaAllies />} />
         <Route path="/clients" element={<PlantillaClients />} />
         <Route path="/contact" element={<PlantillaContact />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
     </Router>
   );

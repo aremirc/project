@@ -2,7 +2,6 @@ import '../estilos/PlantillaHome.css';
 import Header from '../organisms/Header';
 import Footer from '../organisms/Footer';
 import Carousel from '../molecules/Carousel';
-import Main from '../organisms/Main';
 
 function PlantillaHome() {
   return (
@@ -15,7 +14,6 @@ function PlantillaHome() {
         </div>
         <Carousel />
       </main>
-      <Main />
       <Footer />
     </div>
   )
