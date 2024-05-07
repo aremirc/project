@@ -9,12 +9,11 @@
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  cursor: pointer;
-  perspective: 800px;
   position: relative;
 }
 
-.item__figure, .item__texto {
+.item__figure,
+.item__texto {
   backface-visibility: hidden;
   transition: transform 0.5s ease;
 }
@@ -25,13 +24,25 @@
   transition: background-color 3.5s;
 }
 
+.item:hover .item__icon,
+.item:hover .item__link {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: 1s;
+}
+
 .item:hover .item__figure {
-  width: 100%;
   transform: translateY(0) rotateY(180deg);
 }
 
+.item:hover .item__figureImg {
+  width: 100%;
+  color: transparent;
+}
+
 .item:hover .item__texto {
-  transform: translateY(-100px);
+  transform: translateY(-10px);
 }
 
 .item:hover .item__parrafo {
@@ -43,12 +54,10 @@
   transition-delay: .5s;
 }
 
-/* Estilos para la figura */
 .item__figure {
-  width: 90%;
+  width: 100%;
   height: 250px;
   margin: 0;
-  text-align: center;
   position: relative;
   transform: translateY(100px);
   transition: 1.45s;
@@ -57,18 +66,26 @@
 /* Estilos para la imagen dentro de la figura */
 .item__figureImg {
   object-fit: cover;
-  width: 100%;
+  width: 90%;
   height: 100%;
   border-radius: 3px;
+  backdrop-filter: hue-rotate(90deg);
+  font-size: 1rem;
   color: #0078CF;
   position: absolute;
-  inset: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  perspective: 800px;
 }
 
 /* Estilos para la descripción de la imagen */
 .item__figcaption {
   color: #999;
+  font-size: 1.5rem;
   font-style: italic;
+  position: absolute;
+  inset: 0;
+  transform: translateY(100%);
 }
 
 /* Estilos para los textos dentro de main */
@@ -95,11 +112,43 @@
   font-size: 1.5rem;
   font-weight: 100;
   letter-spacing: .5px;
-  /* white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; */
   transform: translateY(100px);
   transition: 1s;
   visibility: 0;
   opacity: 0;
+}
+
+.item__stars {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+}
+
+.item__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #f8872b;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(2rem);
+  margin-right: .35rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+.item__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(2rem);
+  backdrop-filter: blur(.5rem);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+  z-index: 1000;
 }

@@ -7,18 +7,69 @@
 }
 
 .plantillaContact__main {
-  flex: 1;
-  background: transparent;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(#f0483a, #0ab3d1);
+  font-size: 2.8rem;
+  padding: 1.4rem;
+}
+
+.plantillaContact__section {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+  margin: auto;
+}
+
+.plantillaContact__text {
+  width: 50%;
+}
+
+.plantillaContact__social {
+  display: flex;
+  justify-content: center;
+}
+
+.plantillaContact__icon {
+  color: #fff;
+  font-size: 3rem;
+  display: inline-block;
+  margin-right: 2rem;
+  transition: 0.25s;
+}
+
+.plantillaContact__icon:hover {
+  transform: translateY(-5px);
 }
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 600px) {
+  .plantillaContact__section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plantillaContact__text {
+    width: 95%;
+    padding-bottom: 1rem;
+  }
 }
 
 /* Estilos para pantallas medianas */
 @media (min-width: 601px) and (max-width: 1024px) {
+  .plantillaContact__section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plantillaContact__text {
+    width: 95%;
+    margin-bottom: 1rem;
+  }
 }
 
 /* Estilos para pantallas grandes */
-@media (min-width: 1025px) {
-}
+@media (min-width: 1025px) {}

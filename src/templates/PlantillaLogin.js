@@ -1,9 +1,11 @@
 import '../estilos/PlantillaLogin.css';
 import Header from '../organisms/Header';
 import Footer from '../organisms/Footer';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function PlantillaLogin() {
+  const location = useLocation();
+  const previousPath = location.state && location.state.from ? location.state.from : '/project';
 
   const verify = () => {
     sessionStorage.setItem("myKey", true);
@@ -24,7 +26,7 @@ function PlantillaLogin() {
           </div>
           <div className='plantillaLogin__box'>
             {/* <input className='plantillaLogin__boton' type="submit" value="Iniciar sesión" /> */}
-            <Link className='plantillaLogin__boton' onClick={verify} to="/project">Iniciar sesión</Link>
+            <Link className='plantillaLogin__boton' onClick={verify} to={previousPath}>Iniciar sesión</Link>
           </div>
           <div>
             <a className='plantillaLogin__link' href="recuperar_contrasena.html">¿Olvidaste tu contraseña?</a>
