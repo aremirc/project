@@ -1,3 +1,4 @@
+import '../estilos/Seeker.css';
 import { useState } from 'react';
 import { FaMagnifyingGlass } from 'react-icons/fa6';
 

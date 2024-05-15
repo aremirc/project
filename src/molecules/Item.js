@@ -6,7 +6,7 @@ function Item(props) {
   return (
     <div className='item'>
       <figure className='item__figure'>
-        <img className='item__figureImg' src={props.imagen ?? 'imagen.jpg'} alt='Descrip. de la imagen (alt)' />
+        <img className='item__figureImg' src={props.imagen ?? 'imagen.jpg'} alt={props.textoImagen ?? 'Descrip. de la imagen (alt)'} />
         <figcaption className='item__figcaption'>{props.textoImagen ?? 'Descripción de la imagen'}</figcaption>
       </figure>
       <div className='item__texto'>
@@ -31,7 +31,7 @@ function Item(props) {
         </span>
       </div>
       <div className='item__link'>
-        <More />
+        <More color={props.color ?? 'greenyellow'} />
       </div>
     </div>
   )

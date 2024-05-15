@@ -1,0 +1,7 @@
+.header__entrada:focus + .header__boton--search {
+  color: #000;
+  border-color: #fade4b;
+  background-color: #fade4b;
+  box-shadow: 0 0 12px 3px gold;
+  transition: all .5s;
+}

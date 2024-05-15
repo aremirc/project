@@ -26,7 +26,7 @@ function Header({ hide }) {
               <Link className='header__link' to="/project"><span className='header__span'>Inicio</span><FaHouse className='header__icon' /></Link>
             </li>
             <li className='header__li' style={{ backgroundImage: "url('https://img.freepik.com/foto-gratis/escudo-seguridad-proteccion-privacidad-concepto-confidencialidad_53876-128097.jpg?t=st=1714268039~exp=1714271639~hmac=c3467e3ac3782e821276fe08bc4a4d1997f4901ffea747d3f57be33f24ff100d&w=1060')" }}>
-              <Link className='header__link' to="/central"><span className='header__span'>Servicios</span><FaHandHoldingHeart className='header__icon' /></Link>
+              <Link className='header__link' to="/services"><span className='header__span'>Servicios</span><FaHandHoldingHeart className='header__icon' /></Link>
             </li>
             <li className='header__li' style={{ backgroundImage: "url('https://img.freepik.com/foto-gratis/escena-negocios-futurista-ambiente-ultra-moderno_23-2151003788.jpg?t=st=1714268128~exp=1714271728~hmac=5a7168ef7e3cba8a654db262a82aadddabcbb67e22f8e80b6a27fcfa293669ee&w=900')" }}>
               <Link className='header__link' to="/allies"><span className='header__span'>Partners</span><FaHandshake className='header__icon' /></Link>
@@ -42,7 +42,7 @@ function Header({ hide }) {
         <div className='header__box'>
           <Seeker />
           <div className='header__user'>
-            <a href='/project' className='header__boton header__boton--left'><FaRegUser /></a>
+            <a href='/profile' className='header__boton header__boton--left'><FaRegUser /></a>
             <div className='header__sesion header__show'>
               {
                 sessionStorage.getItem("myKey") ? (

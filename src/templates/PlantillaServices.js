@@ -1,13 +1,13 @@
-import '../estilos/PlantillaCentral.css';
+import '../estilos/PlantillaServices.css';
 import Header from '../organisms/Header';
 import Main from '../organisms/Main';
 import Footer from '../organisms/Footer';
 
-function PlantillaCentral() {
+function PlantillaServices() {
   return (
-    <div className='plantillaCentral'>
+    <div className='plantillaServices'>
       <Header />
-      <main className='plantillaCentral__main'>
+      <main className='plantillaServices__main'>
         <Main />
       </main>
       <Footer />
@@ -15,4 +15,4 @@ function PlantillaCentral() {
   )
 }
 
-export default PlantillaCentral;
+export default PlantillaServices;
