@@ -1,12 +1,13 @@
 import '../estilos/Header.css';
 import { FaHouse, FaHandHoldingHeart, FaHandshake, FaSlideshare, FaRegUser } from 'react-icons/fa6';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import Seeker from '../molecules/Seeker';
 
 function Header({ hide }) {
+  const location = useLocation();
 
-  const [mostrar, setMostrar] = useState(false)
+  const [mostrar, setMostrar] = useState(false);
 
   const logOut = () => {
     sessionStorage.removeItem('myKey');
@@ -46,13 +47,13 @@ function Header({ hide }) {
             <div className='header__sesion header__show'>
               {
                 sessionStorage.getItem("myKey") ? (
-                  <Link className='header__boton header__boton--right' onClick={logOut} to="/login">Cerrar sesión</Link>
+                  <Link className='header__boton header__boton--right' onClick={logOut} to="/login" state={{ from: location }}>Cerrar sesión</Link>
                 ) : (
                   hide ? (
                     <Link className='header__boton header__boton--right' to="/register">Crear cuenta</Link>
                   ) : (
                     <>
-                      <Link className='header__boton header__boton--right header__boton--up header__boton--up__right' to="/login">Iniciar sesión</Link>
+                      <Link className='header__boton header__boton--right header__boton--up header__boton--up__right' to="/login" state={{ from: location }}>Iniciar sesión</Link>
                       <Link className='header__boton header__boton--right header__boton--down header__boton--down__right' to="/register">Crear cuenta</Link>
                     </>
                   )

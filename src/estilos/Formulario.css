@@ -1,11 +1,12 @@
 .formulario {
-  width: 40%;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .formulario__formBox {
   border-radius: 2rem;
-  background: linear-gradient(0deg, rgb(248, 185, 103) 0%, rgba(255, 162, 9, 1) 100%);
+  backdrop-filter: brightness(.65) blur(1.2rem);
   padding: 5rem 6rem;
 }
 
@@ -22,8 +23,9 @@
 .formulario__entrada {
   border: none;
   outline: none;
-  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  border-bottom: .1rem solid rgba(255, 255, 255, .5);
   border-radius: .8rem;
+  color: #fff;
   background: rgba(255, 255, 255, .3);
   backdrop-filter: blur(5px);
   padding: 1rem;
@@ -33,6 +35,10 @@
 .formulario__entrada::placeholder {
   color: #fff;
   padding: 0 .4rem;
+}
+
+.formulario__entrada option {
+  color: #666;
 }
 
 .formulario__boton {

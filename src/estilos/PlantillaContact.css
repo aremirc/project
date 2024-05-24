@@ -9,7 +9,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  background: radial-gradient(#f0483a, #0ab3d1);
+  background-image: url('https://static.colourlovers.com/images/patterns/3107/3107580.png');
   font-size: 2.8rem;
   padding: 1.4rem;
 }
@@ -19,28 +19,37 @@
   height: 100%;
   display: flex;
   justify-content: space-around;
+  gap: 2rem;
   padding: 2rem 0;
   margin: auto;
 }
 
 .plantillaContact__text {
-  width: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  backdrop-filter: blur(1rem);
+  padding: 3.5rem;
 }
 
 .plantillaContact__social {
   display: flex;
   justify-content: center;
+  gap: 2rem;
 }
 
 .plantillaContact__icon {
   color: #fff;
   font-size: 3rem;
-  display: inline-block;
-  margin-right: 2rem;
+  display: flex;
+  border-radius: 1rem;
+  backdrop-filter: blur(1rem);
   transition: 0.25s;
 }
 
 .plantillaContact__icon:hover {
+  color: #0ab3d1;
   transform: translateY(-5px);
 }
 
@@ -49,11 +58,6 @@
   .plantillaContact__section {
     flex-direction: column;
     align-items: center;
-  }
-
-  .plantillaContact__text {
-    width: 95%;
-    padding-bottom: 1rem;
   }
 }
 

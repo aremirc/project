@@ -11,7 +11,7 @@
 
 .footer__texto,
 .footer__li {
-  color: #c7281a;
+  color: rgba(255, 0, 0, 0.75);
   font-size: 1.3rem;
   font-weight: 100;
   margin: 1.3rem 1rem;

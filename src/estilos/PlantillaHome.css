@@ -22,7 +22,7 @@
 .plantillaHome__titulo {
   font-size: 5rem;
   font-weight: 300;
-  color: rgb(255, 115, 0);
+  color: rgba(255, 0, 0, 0.75);
   margin: 30px 20px 0 5px;
 }
 

@@ -2,9 +2,12 @@ import '../estilos/PlantillaProfile.css';
 import Footer from '../organisms/Footer';
 import Header from '../organisms/Header';
 import Tooltip from '../atoms/Tooltip';
+import { Navigate, useLocation } from 'react-router-dom';
 import UserActions from '../atoms/UserActions';
 
 function PlantillaProfile() {
+  const location = useLocation();
+
   const useUser = () => {
     return {
       name: 'Aremirc',
@@ -23,20 +26,26 @@ function PlantillaProfile() {
   return (
     <div className='plantillaProfile'>
       <Header />
-      <div className='plantillaProfile__main'>
-        {/* user ? <AuthenticatedApp /> : <UnauthenticatedApp /> */}
-        {user &&
-          <UserActions user={user} />
-        }
-        <Tooltip content={(clase) => <a className={clase} href={user.link}>{user.link}</a>}>
-          {(isHovered, toggleHover, clase, clasePin) =>
-            <button className={clase}>
-              <p style={{ color: `${isHovered ? 'white' : 'black'}` }}>Hover me</p>
-              {!isHovered && <span className={clasePin} onClick={toggleHover}>📌</span>}
-            </button>
-          }
-        </Tooltip>
-      </div>
+      {/* user ? <AuthenticatedApp /> : <UnauthenticatedApp /> */}
+      {
+        sessionStorage.getItem("myKey") ? (
+          user && (
+            <div className='plantillaProfile__main'>
+              <UserActions user={user} />
+              <Tooltip content={(clase) => <a className={clase} href={user.link}>{user.link}</a>}>
+                {(isHovered, toggleHover, clase, clasePin) =>
+                  <button className={clase}>
+                    <p style={{ color: `${isHovered ? 'white' : 'black'}` }}>Hover me</p>
+                    {!isHovered && <span className={clasePin} onClick={toggleHover}>📌</span>}
+                  </button>
+                }
+              </Tooltip>
+            </div>
+          )
+        ) : (
+          <Navigate to="/login" state={{ from: location }} />
+        )
+      }
       <Footer />
     </div >
   )

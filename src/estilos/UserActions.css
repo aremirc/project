@@ -33,20 +33,20 @@
 
 .userActions__name {
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   font-weight: 400;
   letter-spacing: .08rem;
 }
 
 .userActions__role {
   color: #ccc;
-  font-size: 1.2rem;
+  font-size: 1.45rem;
   letter-spacing: .1rem;
 }
 
 .userActions__email {
   color: #858585;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .userActions__options {
@@ -63,7 +63,7 @@
 }
 
 .userActions__titleBox {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 2.5rem;
   display: flex;
   align-items: center;
@@ -84,7 +84,7 @@
   font-size: 2rem;
 }
 
-.userActions__icon {
+.userActions__itemBox {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,4 +92,13 @@
 
 .userActions__label {
   color: #646464;
+}
+
+.userActions__icon {
+  display: flex;
+  cursor: pointer;
+}
+
+.userActions__icon:hover {
+  color: rgba(255, 0, 0, 0.74);
 }

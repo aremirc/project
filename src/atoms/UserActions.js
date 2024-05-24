@@ -21,21 +21,29 @@ function UserActions({ user }) {
             <span className='userActions__title'>SETTINGS</span>
           </div>
           <div className='userActions__iconsBox'>
-            <div className='userActions__icon'>
+            <div className='userActions__itemBox'>
               <span className='userActions__label'>{user.name}</span>
-              <FaUserPen />
+              <div className='userActions__icon'>
+                <FaUserPen />
+              </div>
             </div>
-            <div className='userActions__icon'>
+            <div className='userActions__itemBox'>
               <span className='userActions__label'>{user.surname}</span>
-              <FaUserPen />
+              <div className='userActions__icon'>
+                <FaUserPen />
+              </div>
             </div>
-            <div className='userActions__icon'>
+            <div className='userActions__itemBox'>
               <span className='userActions__label'>{user.country}</span>
-              <FaUserPen />
+              <div className='userActions__icon'>
+                <FaUserPen />
+              </div>
             </div>
-            <div className='userActions__icon'>
+            <div className='userActions__itemBox'>
               <span className='userActions__label'>{user.phone}</span>
-              <FaUserPen />
+              <div className='userActions__icon'>
+                <FaUserPen />
+              </div>
             </div>
           </div>
         </div>

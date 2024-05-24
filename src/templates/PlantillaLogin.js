@@ -1,11 +1,14 @@
 import '../estilos/PlantillaLogin.css';
 import Header from '../organisms/Header';
 import Footer from '../organisms/Footer';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 function PlantillaLogin() {
   const location = useLocation();
   const previousPath = location.state && location.state.from ? location.state.from : '/project';
+
+  const navigate = useNavigate();
+  console.log(navigate);
 
   const verify = () => {
     sessionStorage.setItem("myKey", true);

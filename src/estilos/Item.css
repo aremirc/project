@@ -20,7 +20,7 @@
 
 .item:hover {
   background-color: #fff;
-  box-shadow: 0 1rem 2rem rgba(216, 12, 12, 0.3);
+  box-shadow: 0 1rem 1.5rem rgba(255, 0, 0, 0.3);
   transition: background-color 3.5s;
 }
 
@@ -98,11 +98,11 @@
 
 /* Estilos para los títulos */
 .item__titulo {
-  color: rgb(255, 72, 0);
+  color: rgba(255, 0, 0, 0.75);
   margin: 15px 0;
   font-size: 2.8rem;
   font-weight: 400;
-  text-shadow: 1px 1px 2px #999;
+  text-shadow: 1px 1px 2px #ccc;
 }
 
 /* Estilos para los párrafos */

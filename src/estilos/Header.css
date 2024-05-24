@@ -1,7 +1,7 @@
 /* Estilos para el header */
 .header {
   height: 8.5rem;
-  background-color: rgba(255, 0, 0, .65);
+  background-color: rgba(255, 0, 0, 0.7);
   backdrop-filter: grayscale(1);
   color: #fff;
   display: flex;
