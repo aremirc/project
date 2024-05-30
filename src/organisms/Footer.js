@@ -1,5 +1,5 @@
 import '../estilos/Footer.css';
-import { FaRegHeart } from 'react-icons/fa6';
+import { FaRegHeart, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -8,6 +8,23 @@ function Footer() {
       <div className="footer__principal">
         <p className='footer__texto'>&copy; 2024 TECNIPAC. Todos los derechos reservados.</p>
         <span className='footer__dev'>Made with <FaRegHeart /> by AREMIRC</span>
+        <div className='footer__social'>
+          <div className='footer__iconBox'>
+            <a className='footer__icon' href='./contact'>
+              <FaFacebook />
+            </a>
+          </div>
+          <div className='footer__iconBox'>
+            <a className='footer__icon' href='./contact'>
+              <FaInstagram />
+            </a>
+          </div>
+          <div className='footer__iconBox'>
+            <a className='footer__icon' href='./contact'>
+              <FaYoutube />
+            </a>
+          </div>
+        </div>
         <ul className='footer__ul'>
           <li className='footer__li'>
             <Link className='footer__link' to="/contact">

@@ -1,5 +1,5 @@
 import '../estilos/PlantillaContact.css';
-import { FaRegEnvelope, FaMapLocationDot, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa6';
+import { FaRegEnvelope, FaMapLocationDot } from 'react-icons/fa6';
 import Formulario from '../molecules/Formulario';
 import Footer from '../organisms/Footer';
 import Header from '../organisms/Header';
@@ -9,7 +9,7 @@ function PlantillaContact() {
   const location = useLocation();
 
   return (
-    <div className='plantillaContact'>
+    <div className='plantillaContact' style={{ backgroundImage: "url('https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')" }}>
       <Header />
       {
         sessionStorage.getItem("myKey") ? (
@@ -17,7 +17,8 @@ function PlantillaContact() {
             <div className='plantillaContact__section'>
               <div className='plantillaContact__text'>
                 <div className='plantillaContact__info'>
-                  Información de contacto <FaRegEnvelope /><br />
+                  Información de contacto <FaRegEnvelope />
+                  <br />
                   <FaMapLocationDot /> Mapa de ubicación
                 </div>
                 <div className='plantillaContact__map'>
@@ -25,23 +26,6 @@ function PlantillaContact() {
                 </div>
               </div>
               <Formulario />
-            </div>
-            <div className='plantillaContact__social'>
-              <div className='plantillaContact__iconBox'>
-                <a className='plantillaContact__icon' href='./contact'>
-                  <FaFacebook />
-                </a>
-              </div>
-              <div className='plantillaContact__iconBox'>
-                <a className='plantillaContact__icon' href='./contact'>
-                  <FaInstagram />
-                </a>
-              </div>
-              <div className='plantillaContact__iconBox'>
-                <a className='plantillaContact__icon' href='./contact'>
-                  <FaYoutube />
-                </a>
-              </div>
             </div>
           </main>
         ) : (

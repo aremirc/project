@@ -2,6 +2,14 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  background-size: cover;
+}
+
+.plantillaHome__header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 .plantillaHome__main {
@@ -11,7 +19,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 30px;
 }
 
 .plantillaHome__texto {
@@ -20,15 +27,23 @@
 }
 
 .plantillaHome__titulo {
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: 300;
-  color: rgba(255, 0, 0, 0.75);
-  margin: 30px 20px 0 5px;
+  color: transparent;
+  background: linear-gradient(to top, red, #000, white);
+  background-clip: text;
+  margin: 7rem 3rem;
 }
 
 .plantillaHome__titulo--span {
-  font-size: 5.5rem;
+  font-size: 8.5rem;
   font-weight: 700;
+}
+
+.plantillaHome__footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
 }
 
 /* Estilos para pantallas pequeñas */

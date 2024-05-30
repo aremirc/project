@@ -23,16 +23,16 @@ function Header({ hide }) {
         </Link>
         <nav className='header__nav header__show'>
           <ul className='header__ul'>
-            <li className='header__li' style={{ backgroundImage: "url('https://img.freepik.com/foto-gratis/representacion-3d-modelo-casa_23-2150799783.jpg?t=st=1714267880~exp=1714271480~hmac=58377c187d19d524a1f724f54616b27ff2f16dd45bb0def12401761d40d290f5&w=740')" }}>
+            <li className='header__li'>
               <Link className='header__link' to="/project"><span className='header__span'>Inicio</span><FaHouse className='header__icon' /></Link>
             </li>
-            <li className='header__li' style={{ backgroundImage: "url('https://img.freepik.com/foto-gratis/escudo-seguridad-proteccion-privacidad-concepto-confidencialidad_53876-128097.jpg?t=st=1714268039~exp=1714271639~hmac=c3467e3ac3782e821276fe08bc4a4d1997f4901ffea747d3f57be33f24ff100d&w=1060')" }}>
+            <li className='header__li'>
               <Link className='header__link' to="/services"><span className='header__span'>Servicios</span><FaHandHoldingHeart className='header__icon' /></Link>
             </li>
-            <li className='header__li' style={{ backgroundImage: "url('https://img.freepik.com/foto-gratis/escena-negocios-futurista-ambiente-ultra-moderno_23-2151003788.jpg?t=st=1714268128~exp=1714271728~hmac=5a7168ef7e3cba8a654db262a82aadddabcbb67e22f8e80b6a27fcfa293669ee&w=900')" }}>
+            <li className='header__li'>
               <Link className='header__link' to="/allies"><span className='header__span'>Partners</span><FaHandshake className='header__icon' /></Link>
             </li>
-            <li className='header__li' style={{ backgroundImage: "url('https://img.freepik.com/foto-gratis/pareja-tiro-medio-hablando-agente-inmobiliario_23-2150322114.jpg?t=st=1714268219~exp=1714271819~hmac=a16a5824b2bb005c2693dbdfcfaf9685d3728748c36cd0eb922cd97d37f870f9&w=996')" }}>
+            <li className='header__li'>
               <Link className='header__link' to="/clients"><span className='header__span'>Clientes</span><FaSlideshare className='header__icon' /></Link>
             </li>
           </ul>

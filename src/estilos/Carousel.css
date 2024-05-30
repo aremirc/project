@@ -1,20 +1,20 @@
 .carousel {
   flex: 1;
   width: 100%;
-  height: 85%;
+  height: 100%;
   display: flex;
   align-items: center;
   position: relative;
-  margin: 15px;
 }
 
 .carousel__cambio {
   flex: 1;
   height: 100%;
-  border-radius: 3rem;
-  background-color: #f7b143;
+  /* background: linear-gradient(#808080, #f7b143, #fff); */
   background-position: center;
   background-size: cover;
+  display: flex;
+  align-items: end;
   transition: all 1s;
 }
 

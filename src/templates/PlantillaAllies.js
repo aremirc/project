@@ -6,7 +6,7 @@ import More from '../atoms/More';
 
 function PlantillaAllies() {
   return (
-    <div className='plantillaAllies'>
+    <div className='plantillaAllies' style={{ backgroundImage: "url('https://img.freepik.com/foto-gratis/escena-negocios-futurista-ambiente-ultra-moderno_23-2151003788.jpg?t=st=1714268128~exp=1714271728~hmac=5a7168ef7e3cba8a654db262a82aadddabcbb67e22f8e80b6a27fcfa293669ee&w=900')" }}>
       <Header />
       <main className='plantillaAllies__main'>
         <div className='plantillaAllies__brands'>
